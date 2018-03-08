@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import styled from "styled-components/primitives";
 import logo from "./logo.svg";
@@ -25,7 +27,7 @@ const IntroParagraph = styled.Text`
   font-size: large;
 `;
 
-class App extends Component {
+class App extends Component<{}, {}> {
   render() {
     return (
       <AppView>
