@@ -1,4 +1,5 @@
 import { randomEntryInArray, randomCollection, generate } from "../";
+import { NUFC as MOCK_DATA } from "../data";
 
 describe("randomEntryInArray()", () => {
   it("works with valid input", () => {
@@ -28,5 +29,11 @@ describe("randomCollection()", () => {
     expect(randomCollection(["test"], 2)).toEqual(["test", "test"]);
     expect(randomCollection(["one", "two", "three"], 3)).toHaveLength(3);
     expect(randomCollection(["one", "two", "three"])).toHaveLength(100);
+  });
+});
+
+describe("generate()", () => {
+  it("works with valid input", () => {
+    expect(generate(MOCK_DATA, 10)).toBeTruthy();
   });
 });
