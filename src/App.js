@@ -19,6 +19,7 @@ const HeaderView = styled.View`
 `;
 
 const LogoImage = styled.Image`
+  width: 80px;
   height: 80px;
 `;
 
