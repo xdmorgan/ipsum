@@ -19,6 +19,11 @@ const randomEntryInArray = (
 const randomCollection = (dict: string[] = [], length: number = 100) =>
   Array.from({ length }).map(() => randomEntryInArray(dict));
 
+/**
+ *
+ * @param {*} data A dictionary of strings to select from
+ * @param {*} length How many entries to randomly select
+ */
 const generate = (data: string[], length: number) =>
   randomCollection(data, length).join(". ");
 
