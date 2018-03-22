@@ -7,6 +7,6 @@ import * as generator from "../generator";
 generator.generate = () => "Randomly generated String";
 
 it("renders without crashing", () => {
-  const tree = renderer.create(<App />);
+  const tree = renderer.create(<App />).toJSON();
   expect(tree).toMatchSnapshot();
 });
